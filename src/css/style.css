@@ -1,0 +1,121 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: url(../images/bg-pattern-top-desktop.svg) top left / 40% 50% no-repeat,
+                url(../images/bg-pattern-bottom-desktop.svg) bottom right / 70% 80% no-repeat;
+    display: flex;
+    flex-direction: column;   
+    /* justify-content: center;   */
+    align-items: center; 
+    min-height: 100%;      
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 100px 50px 100px;
+}
+
+.info{
+    width: 50%;
+    height: 50%;
+    padding-right: 150px;
+}
+
+h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 3em;
+}
+
+.info-paragrafo{
+    color: hsl(333, 80%, 67%);
+    font-size: 1em;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+ul>li{
+    background: hsl(300, 24%, 96%);
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: hsl(300, 43%, 22%);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+li::before{
+    content:"";
+    background: url(../images/icon-star.svg) center center repeat;
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    padding-right: 67px;
+}
+
+.guru{
+    position: relative;
+    left: 10%;
+}
+
+.tech{
+    position: relative;
+    left: 20%;
+}
+
+.comentario{
+    display: inline-flex;
+    width: 85%;
+    height: 60%;
+}
+
+.opiniao-colton, .opiniao-irene, .opiniao-anne{
+    width: 300px;
+    height: 190px;
+    background: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.colton, .irene, .anne{
+    border-radius: 50%;
+    width: 15%;
+    float: left;
+    margin-right: 15px;
+}
+
+.nome{
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.cargo{
+    color: hsl(303, 10%, 53%);
+    font-size: 12px;
+}
+
+.texto, .texto-irene{
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    padding-top: 30px;
+    line-height: 20px;
+}
+
+.texto-irene{
+    padding-right: 10px;
+}
+
+.opiniao-colton{
+    position: relative;
+    bottom: 10px;
+}
+
+.opiniao-anne{
+    position: relative;
+    top: 10px;
+}
